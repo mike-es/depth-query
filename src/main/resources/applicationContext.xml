@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="depthService" class="com.fsi.geoserver.DepthService">
+        <constructor-arg ref="geoServer" />
+        <constructor-arg index="1" value="-5" />
+        <constructor-arg index="2" value="NaN" />
+    </bean>
+    <bean id="depthServiceDescriptor" class="org.geoserver.platform.Service">
+        <constructor-arg index="0" value="depth" />
+        <constructor-arg index="1" ref="depthService" />
+        <constructor-arg index="2" value="1.0" />
+        <constructor-arg index="3">
+            <list>
+                <value>GetDepth</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="getDepthRequestReader" class="org.geoserver.ows.KvpRequestReader">
+        <constructor-arg value="com.fsi.geoserver.GetDepth" />
+    </bean>
+    
+    <bean id="getDepthResponse" class="com.fsi.geoserver.GetDepthResponse" />
+</beans>
