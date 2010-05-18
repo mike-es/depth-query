@@ -7,15 +7,15 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fsi.geoserver</groupId>
     <artifactId>depth-query</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>GeoServer depth query plugin</name>
     <description>A plugin to extend the WCS with another request, GetDepth, which returns some statistics about the coverage in a certain area</description>
     
     
     <scm>
-    	<connection>scm:svn:https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/trunk</connection>
-    	<developerConnection>scm:svn:https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/trunk</developerConnection>
-    	<url>https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/trunk</url>
+    	<connection>scm:svn:https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/tags/depth-query-1.0</connection>
+    	<developerConnection>scm:svn:https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/tags/depth-query-1.0</developerConnection>
+    	<url>https://fsieng.forwardslope.com/svn/fsirepo/C2RPC/depth-query/tags/depth-query-1.0</url>
     </scm>
     <dependencies>
         <dependency>
