@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fsi.geoserver</groupId>
     <artifactId>depth-query</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>GeoServer depth query plugin</name>
     <description>A plugin to extend the WCS with another request, GetDepth, which returns some statistics about the coverage in a certain area</description>
     
